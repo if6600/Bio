@@ -1,0 +1,64 @@
+html {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+h1, p {
+	color: #FFFFFF;
+}
+
+h1 {
+	font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: black;
+	background-color: #E5011C;
+	font-family: 'Helvetica';
+}
+
+.content{
+
+}
+
+.content .text {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+	border-bottom: 1px solid #FFFFFF;
+	margin: 30px 0;
+}
+
+.content .text p {
+	padding: 0 5px;
+}
+
+.content .text.left {
+	margin-right: 30px;
+}
+
+.content .text.left p {
+	padding-left: 30px;
+}
+
+.content .text.right {
+	margin-left: 30px;
+}
+
+.content .text.right p {
+	padding-right: 30px;
+}
+
+.photo img {
+	width: 60%;
+	opacity: 70%;
+}

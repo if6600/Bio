@@ -16,6 +16,8 @@ h1 {
 	font-style: normal;
   font-weight: bold;
   font-size: 72px;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 body {
@@ -24,18 +26,16 @@ body {
 	color: black;
 	background-color: #E5011C;
 	font-family: 'Helvetica';
-}
-
-.content{
-
+  font-style: normal;
 }
 
 .content .text {
-  font-style: normal;
+	position: relative;
   font-weight: lighter;
   font-size: 14px;
 	border-bottom: 1px solid #FFFFFF;
 	margin: 30px 0;
+	z-index: 1;
 }
 
 .content .text p {
@@ -59,6 +59,125 @@ body {
 }
 
 .photo img {
-	width: 60%;
+	position: relative;
+	width: 75%;
 	opacity: 70%;
+	margin-top: 100px;
+	z-index: 1;
+}
+
+.photo.right {
+	text-align: right;
+}
+
+.photo.left {
+	text-align: left;
+}
+
+.content .figure{
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+}
+
+.figure.one {
+	margin-left: 53vw;
+	width: 35vw;
+	height: 35vw;
+	background: white;
+}
+
+.figure.two {
+	margin-left: 10vw;
+	width: 40vw;
+	height: 40vw;
+	border-radius: 25vw;
+	background: white;
+}
+
+.figure.three {
+	margin-left: 55vw;
+	width: 0;
+	height: 0;
+	border-left: 18vw solid transparent;
+	border-right: 18vw solid transparent;
+	border-bottom: 34vw solid white;
+}
+
+.content .stroke {
+	position: absolute;
+	border-bottom: 1px solid #FFFFFF;
+	line-height: 2px;
+	font-size: 13px;
+  font-weight: bold;
+	z-index: 2;
+}
+
+.content .stroke.right {
+margin-top: 250px;
+margin-left: 180px;
+}
+
+.content .stroke.left {
+	margin-top: 289px;
+	margin-left: 35px;
+}
+
+@media (min-width: 1440px) {
+	h1 {
+	  font-size: 360px;
+		margin-top: 40px;
+		margin-left: 40px;
+	}
+
+	.content .text {
+	  font-size: 55px;
+		border-bottom: 2px solid #FFFFFF;
+		margin: 40px 0;
+	}
+
+	.content .text p {
+		padding: 0 50px;
+	}
+
+	.content .text.left {
+		margin-right: 150px;
+	}
+
+	.content .text.left p {
+		padding-left: 150px;
+	}
+
+	.content .text.right {
+		margin-left: 150px;
+	}
+
+	.content .text.right p {
+		padding-right: 150px;
+	}
+
+	.photo img {
+		margin-top: 500px;
+		margin-bottom: 100px;
+	}
+
+	.content .figure{
+		margin-top: 200px;
+	}
+
+	.content .stroke {
+		border-bottom: 2px solid #FFFFFF;
+		font-size: 50px;
+	}
+
+	.content .stroke.right {
+	margin-top: 1230px;
+	margin-left: 830px;
+	}
+
+	.content .stroke.left {
+		margin-top: 1379px;
+		margin-left: 150px;
+	}
+
 }
